@@ -6,7 +6,9 @@
  * Time: 20:58
  */
 
-namespace EcosystemObject;
+namespace Module\EcosystemObject\Entity;
+
+use EcosystemObject\EcosystemObjectInterface;
 
 /**
  * Растения

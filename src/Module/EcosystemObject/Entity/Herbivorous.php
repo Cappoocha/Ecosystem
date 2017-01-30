@@ -5,18 +5,18 @@
  * Date: 30.01.2017
  * Time: 20:57
  */
-namespace EcosystemObject;
+namespace Module\EcosystemObject\Entity;
 
 /**
- * Хищник
+ * Травоядный
  *
- * Class Predator
+ * Class Herbivorous
  */
-class Predator extends Animal
+class Herbivorous extends Animal
 {
-	const MIN_STRENGTH = 100;
-	const MAX_STRENGTH = 200;
-	const PREDATOR_TYPE = 'Predator';
+	const MIN_STRENGTH = 0;
+	const MAX_STRENGTH = 100;
+	const HERBIVOROUS_TYPE = 'Herbivorous';
 
 	/**
 	 * Возвращает минимальное число для установления силы
@@ -45,6 +45,6 @@ class Predator extends Animal
 	 */
 	public function getType()
 	{
-		return self::PREDATOR_TYPE;
+		return self::HERBIVOROUS_TYPE;
 	}
 }

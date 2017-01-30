@@ -6,14 +6,14 @@
  * Time: 20:55
  */
 
-namespace EcosystemObject;
+namespace Module\EcosystemObject\Entity;
 
 /**
  * Абстрактный класс животных
  *
  * Class Animal
  */
-abstract class Animal implements EcosystemObjectInterface
+abstract class Animal extends EcosystemObject
 {
 	/**
 	 * Счетчик животных в системе

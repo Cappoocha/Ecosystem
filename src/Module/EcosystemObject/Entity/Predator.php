@@ -3,21 +3,20 @@
 /**
  * @author Катерина
  * Date: 30.01.2017
- * Time: 21:13
+ * Time: 20:57
  */
-
-namespace EcosystemObject;
+namespace Module\EcosystemObject\Entity;
 
 /**
- * Крупный хищник
+ * Хищник
  *
- * Class LargePredator
+ * Class Predator
  */
-class LargePredator extends Predator
+class Predator extends Animal
 {
-	const MIN_STRENGTH = 200;
-	const MAX_STRENGTH = 300;
-	const LARGE_PREDATOR_TYPE = 'Large predator';
+	const MIN_STRENGTH = 100;
+	const MAX_STRENGTH = 200;
+	const PREDATOR_TYPE = 'Predator';
 
 	/**
 	 * Возвращает минимальное число для установления силы
@@ -46,6 +45,6 @@ class LargePredator extends Predator
 	 */
 	public function getType()
 	{
-		return self::LARGE_PREDATOR_TYPE;
+		return self::PREDATOR_TYPE;
 	}
 }

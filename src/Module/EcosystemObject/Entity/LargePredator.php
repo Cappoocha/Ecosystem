@@ -3,20 +3,21 @@
 /**
  * @author Катерина
  * Date: 30.01.2017
- * Time: 20:57
+ * Time: 21:13
  */
-namespace EcosystemObject;
+
+namespace Module\EcosystemObject\Entity;
 
 /**
- * Травоядный
+ * Крупный хищник
  *
- * Class Herbivorous
+ * Class LargePredator
  */
-class Herbivorous extends Animal
+class LargePredator extends Predator
 {
-	const MIN_STRENGTH = 0;
-	const MAX_STRENGTH = 100;
-	const HERBIVOROUS_TYPE = 'Herbivorous';
+	const MIN_STRENGTH = 200;
+	const MAX_STRENGTH = 300;
+	const LARGE_PREDATOR_TYPE = 'Large predator';
 
 	/**
 	 * Возвращает минимальное число для установления силы
@@ -45,6 +46,6 @@ class Herbivorous extends Animal
 	 */
 	public function getType()
 	{
-		return self::HERBIVOROUS_TYPE;
+		return self::LARGE_PREDATOR_TYPE;
 	}
 }
