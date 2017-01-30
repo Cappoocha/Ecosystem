@@ -5,8 +5,7 @@
  * Date: 30.01.2017
  * Time: 21:00
  */
-use EcosystemObject\Entity\Animal;
-use Module\EcosystemObject\Entity\Plant;
+namespace Module\EcosystemObject\Entity;
 
 /**
  * Класс экосистемы

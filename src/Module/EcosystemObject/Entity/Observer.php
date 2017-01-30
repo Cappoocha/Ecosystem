@@ -5,6 +5,9 @@
  * Date: 30.01.2017
  * Time: 21:09
  */
+namespace Module\EcosystemObject\Entity;
+
+use DateTime;
 use EcosystemObject\EcosystemObjectInterface;
 
 /**
@@ -23,7 +26,7 @@ class Observer
 
 	public function __construct()
 	{
-		$this->id ++;
+		$this->id++;
 	}
 
 	/**
