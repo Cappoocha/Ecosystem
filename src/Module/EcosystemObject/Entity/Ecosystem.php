@@ -15,6 +15,20 @@ namespace Module\EcosystemObject\Entity;
 class Ecosystem
 {
 	/**
+	 * Размер поля
+	 *
+	 * @var int
+	 */
+	private $filedSize;
+
+	/**
+	 * Длительность наблюдения за объектами
+	 *
+	 * @var int
+	 */
+	private $observeDuration;
+
+	/**
 	 * @var Animal[]
 	 */
 	private $animals;
@@ -24,8 +38,15 @@ class Ecosystem
 	 */
 	private $plants;
 
-	public function __construct()
+	/**
+	 * @param int $fieldSize
+	 * @param int $observeDuration
+	 */
+	public function __construct($fieldSize, $observeDuration)
 	{
+		$this->filedSize = $fieldSize;
+		$this->observeDuration = $observeDuration;
+
 		$this->animals = [];
 		$this->plants = [];
 	}
