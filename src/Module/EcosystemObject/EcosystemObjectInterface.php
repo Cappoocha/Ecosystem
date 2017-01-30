@@ -18,4 +18,14 @@ interface EcosystemObjectInterface
 	 * @return void
 	 */
 	public function getParameters();
+
+	/**
+	 * Устанавливает позицию объекта в экосистеме
+	 *
+	 * @param int $positionX
+	 * @param int $positionY
+	 *
+	 * @return void
+	 */
+	public function setPosition($positionX, $positionY);
 }

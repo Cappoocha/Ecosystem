@@ -27,4 +27,17 @@ abstract class EcosystemObject implements EcosystemObjectInterface
 	 */
 	private $positionY;
 
+	/**
+	 * Устанавливает позицию объекта в экосистеме
+	 *
+	 * @param int $positionX
+	 * @param int $positionY
+	 *
+	 * @return void
+	 */
+	public function setPosition($positionX, $positionY)
+	{
+		$this->positionX = $positionX;
+		$this->positionY = $positionY;
+	}
 }
